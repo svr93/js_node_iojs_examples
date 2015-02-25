@@ -7,6 +7,11 @@ var https = require('https');
 
 var htmlparser = require('htmlparser');
 
+/* ----- own modules ----- */
+
+var reader = require('./reader.js');
+var urlArr = reader();
+
 var baseHandler = new htmlparser.DefaultHandler(function (error, dom) {
 
 });
